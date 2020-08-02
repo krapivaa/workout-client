@@ -14,9 +14,9 @@ const handleSubmit = (event) => {
             headers: new Headers({
                 'Content-Type': 'application/json'
             })
-        }). then(
+        }).then(
             (response) => response.json()
-        ). then((data) => {
+        ).then((data) => {
             props.updateToken(data.sessionToken)
         })
     }

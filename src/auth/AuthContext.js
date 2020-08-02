@@ -1,5 +1,5 @@
-import React from 'react';
-export const AuthContext = React.createContext({
-    sessionToken: '',
-    setToken: () => {},
-});
+// import React from 'react';
+// export const AuthContext = React.createContext({
+//     sessionToken: '',
+//     setToken: () => {},
+// });
