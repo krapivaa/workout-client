@@ -4,7 +4,7 @@ import {Button, Form, FormGroup, Label, Input} from 'reactstrap';
 const WorkoutCreate = (props) => {
 
     const [description, setDescription] = useState('');
-    const [definition, setDefinition] = useState('');
+    const [definition, setDefinition] = useState('Distance');
     const [result, setResult] = useState('');
 
     const handleSubmit = (e) => {
@@ -20,7 +20,7 @@ const WorkoutCreate = (props) => {
         .then((logData) => {
             console.log(logData);
             setDescription('');
-            setDefinition('');
+            setDefinition('Distance');
             setResult('')
             props.fetchWorkouts();
         })
